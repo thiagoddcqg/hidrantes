@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Hidrantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚒 Sistema de Conferência e Gerenciamento de Hidrantes</h1>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2>Registrar Novo Hidrante</h2>
+            <form id="hydrantForm">
+                <input type="text" id="location" placeholder="Localização" required>
+                <input type="text" id="idNumber" placeholder="ID do Hidrante" required>
+                <select id="status" required>
+                    <option value="Operacional">Operacional</option>
+                    <option value="Manutenção">Manutenção</option>
+                    <option value="Inoperante">Inoperante</option>
+                </select>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section id="list-section">
+            <h2>Lista de Hidrantes</h2>
+            <table id="hydrantTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Localização</th>
+                        <th>Status</th>
+                        <th>Última Conferência</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Hidrantes aparecerão aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

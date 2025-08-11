@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+form input, form select, form button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+form button {
+    background: #388e3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #2e7d32;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.status-Operacional {
+    color: green;
+    font-weight: bold;
+}
+
+.status-Manutenção {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-Inoperante {
+    color: red;
+    font-weight: bold;
+}
+
+button.delete-btn {
+    background: #b71c1c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background: #9a0007;
+}
